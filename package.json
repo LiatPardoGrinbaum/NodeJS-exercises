@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ex1.1.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiatPardoGrinbaum/NodeJS-exercises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiatPardoGrinbaum/NodeJS-exercises/issues"
+  },
+  "homepage": "https://github.com/LiatPardoGrinbaum/NodeJS-exercises#readme"
+}
