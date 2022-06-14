@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/LiatPardoGrinbaum/NodeJS-exercises/issues"
   },
-  "homepage": "https://github.com/LiatPardoGrinbaum/NodeJS-exercises#readme"
+  "homepage": "https://github.com/LiatPardoGrinbaum/NodeJS-exercises#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "chalk": "^5.0.1",
+    "superagent": "^7.1.6",
+    "uniqid": "^5.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
 }

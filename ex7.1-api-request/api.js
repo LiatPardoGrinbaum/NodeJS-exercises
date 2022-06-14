@@ -17,7 +17,7 @@ import superagent from "superagent";
 //   });
 
 //   res.on("end", () => {
-//     // console.log(data);
+
 //     console.log(JSON.parse(data));
 //   });
 // });
