@@ -32,7 +32,7 @@ app.delete("/numbers/:number", (req, res) => {
   try {
     if (!numbers.includes(Number(req.params.number))) throw new Error("The number isn't exist!");
     let numsToKeep = numbers.filter((num) => num != req.params.number);
-    numbers = numsToKeep;
+    numbers = numsToKeep; //can make it with splice and define array as const..
     res.send(req.params.number);
   } catch (e) {
     res.status(400).send(e.message);
@@ -42,12 +42,16 @@ app.delete("/numbers/:number", (req, res) => {
 app.put("/numbers/:number", (req, res) => {
   try {
     let updatedNumber = req.body.number;
-    if (!numbers.includes(Number(updatedNumber))) throw new Error("The number isn't exist!");
     let numberTobeUpdate = req.params.number;
-    let updatedArr = numbers.map((num) => {
-      return num === Number(numberTobeUpdate) ? Number(updatedNumber) : num;
-    });
-    numbers = updatedArr;
+    if (!numbers.includes(Number(numberTobeUpdate))) throw new Error("The number isn't exist!");
+
+    // let updatedArr= numbers.map((num) => {
+    //   return num === Number(numberTobeUpdate) ? Number(updatedNumber) : num;
+    // });
+    // numbers = updatedArr;
+    //could define array as const and implemnet splice on it to change it.
+    numbers.splice(numbers.indexOf(Number(numberTobeUpdate)), 1, Number(updatedNumber));
+    console.log(numbers);
     res.send(updatedNumber);
   } catch (e) {
     res.status(400).send(e.message);
