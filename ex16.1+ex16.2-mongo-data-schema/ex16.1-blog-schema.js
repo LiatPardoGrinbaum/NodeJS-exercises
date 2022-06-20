@@ -2,7 +2,7 @@
 
 ex16.1- Schema
 
-collections: users, blogs, posts
+collections: users, posts
 
 const users = [
   {
@@ -22,51 +22,50 @@ const users = [
 ];
 
 const posts = [
-  {
-  
-    name: "Why am I changing my proffession at the age of 34?",
-    date: "20-06-22",
-    user_id: "",
-  },
-  {
-    name: "10  world's best places to visit.",
-    date: "20-02-21",
-    user_id: "",
-  },
-  {
-    name: "Doctors in Isrel",
-    date: "25-05-22",
-    user_id: "",
-  },
-  {
-    name: "5 best songs ever",
-    date: "10-11-21",
-    user_id: "",
-  },
-];
+      {
+        name: "Why am I changing my proffession at the age of 34?",
+        date: "20-06-22",
+        owner: user1._id, //? need to figure out
+        comments: [
+          {
+            // post_id:"",
+            comment: "Very intresting, thanks!",
+            date: "",
+          },
+          {
+            comment: "Nothing's new!",
+            date: "",
+          },
+        ],
+      },
+      {
+        name: "10  world's best places to visit.",
+        date: "20-02-21",
+        owner: user1._id,
+        comments: [],
+      },
+      {
+        name: "Doctors in Israel",
+        date: "25-05-22",
+        owner: user2._id,
+        comments: [
+          {
+            comment: "I had a fun time reading it! Thank you!",
+            date: "",
+          },
+          {
+            comment: "Informative. thanks.",
+            date: "",
+          },
+        ],
+      },
+      {
+        name: "5 best songs ever",
+        date: "10-11-21",
+        owner: user2._id,
+        comments: [],
+      },
+    ];
 
-const comments = [
-  {
-    // post_id:"",
-    comment: "Very intresting, thanks!",
-    date: "",
-    post_id: "",
-  },
-  {
-    comment: "Nothing's new!",
-    date: "",
-    post_id: "",
-  },
-  {
-    comment: "I had a fun time reading it! Thank you!",
-    date: "",
-    post_id: "",
-  },
-  {
-    comment: "Informative. thanks.",
-    date: "",
-    post_id: "",
-  },
-];
 
 */
