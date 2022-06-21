@@ -20,8 +20,11 @@
   "dependencies": {
     "axios": "^0.27.2",
     "chalk": "^5.0.1",
+    "mongodb": "^4.7.0",
+    "mongoose": "^5.13.14",
     "superagent": "^7.1.6",
-    "uniqid": "^5.4.0"
+    "uniqid": "^5.4.0",
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"

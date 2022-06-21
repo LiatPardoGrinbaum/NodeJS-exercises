@@ -9,9 +9,9 @@ const restaurant = [
     cusine: "pizza",
     kosher: true,
     reviews: [
-      { date: new Date(2022 - 01 - 01), score: 8.1 },
-      { date: new Date(2021 - 09 - 01), score: 7.6 },
-      { date: new Date(2021 - 11 - 08), score: 8.0 },
+      { date: new Date("2022-01-01").toISOString().split("T")[0], score: 8.1 },
+      { date: new Date("2021-09-01").toISOString().split("T")[0], score: 7.6 },
+      { date: new Date("2021-11-08").toISOString().split("T")[0], score: 8.0 },
     ],
   },
   {
@@ -24,9 +24,9 @@ const restaurant = [
     cusine: "Ice Cream",
     kosher: true,
     reviews: [
-      { date: new Date(2022 - 06 - 14), score: 8.5 },
-      { date: new Date(2021 - 08 - 10), score: 7.0 },
-      { date: new Date(2022 - 03 - 11), score: 8.8 },
+      { date: new Date("2022-06-14").toISOString().split("T")[0], score: 8.5 },
+      { date: new Date("2021-08-10").toISOString().split("T")[0], score: 7.0 },
+      { date: new Date("2022-03-11").toISOString().split("T")[0], score: 8.8 },
     ],
   },
   {
@@ -39,9 +39,9 @@ const restaurant = [
     cusine: "Pizza",
     kosher: false,
     reviews: [
-      { date: new Date(2021 - 12 - 02), score: 7.5 },
-      { date: new Date(2022 - 04 - 05), score: 8.2 },
-      { date: new Date(2021 - 10 - 16), score: 7.9 },
+      { date: new Date("2021-12-02").toISOString().split("T")[0], score: 7.5 },
+      { date: new Date("2022-04-05").toISOString().split("T")[0], score: 8.2 },
+      { date: new Date("2021-10-16").toISOString().split("T")[0], score: 7.9 },
     ],
   },
   {
@@ -54,9 +54,9 @@ const restaurant = [
     cusine: "Sushi",
     kosher: true,
     reviews: [
-      { date: new Date(2021 - 10 - 22), score: 6.5 },
-      { date: new Date(2022 - 03 - 18), score: 8.9 },
-      { date: new Date(2021 - 10 - 25), score: 8.5 },
+      { date: new Date("2021-10-22").toISOString().split("T")[0], score: 6.5 },
+      { date: new Date("2022-03-18").toISOString().split("T")[0], score: 8.9 },
+      { date: new Date("2021-10-25").toISOString().split("T")[0], score: 8.5 },
     ],
   },
   {
@@ -69,9 +69,9 @@ const restaurant = [
     cusine: "Sushi",
     kosher: false,
     reviews: [
-      { date: new Date(2021 - 09 - 17), score: 7.5 },
-      { date: new Date(2021 - 07 - 11), score: 8.7 },
-      { date: new Date(2022 - 03 - 25), score: 7.2 },
+      { date: new Date("2021-09-17").toISOString().split("T")[0], score: 7.5 },
+      { date: new Date("2021-07-11").toISOString().split("T")[0], score: 8.7 },
+      { date: new Date("2022-03-25").toISOString().split("T")[0], score: 7.2 },
     ],
   },
 ];

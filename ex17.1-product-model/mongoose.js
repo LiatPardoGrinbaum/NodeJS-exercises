@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import validator from "validator";
 
 mongoose.connect("mongodb://localhost:27017/product-api", { useNewUrlParser: true });
-//! got some depracated warning. in other file the same code works fine!, I think the problem is the version of mongoose installed in the first time
+//! note to myself: got some depracated warning. in other file the same code works fine!, I think the problem is the version of mongoose installed in the first time
 const Product = mongoose.model("Product", {
   name: {
     type: String,
